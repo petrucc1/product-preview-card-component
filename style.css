@@ -4,6 +4,7 @@
 
 :root {
     /* Primary */
+    --dark-green: hsl(159, 53%, 17%);
     --dark-cyan: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
     /* Neutral */
@@ -26,92 +27,197 @@ body {
 
 /* -------------------- DESKTOP --------------------- */
 
-div#left-div,
-div#right-div {
-    display: inline-block;
-    margin-top: 20%;
+@media screen and (min-width: 1440px) {
+    div#left-div,
+    div#right-div {
+        display: inline-block;
+        margin-top: 20%;
+    }
+    
+    div#left-div {
+        background-image: url(./images/image-product-desktop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 65vh;
+        width: 40vh;
+        float: left;
+    }
+    
+    div#right-div{
+        position: relative;
+        background-color: var(--white);
+        padding: 1.5em;
+        height: 58.9vh;
+        width: 35vh;
+        float: right;
+        text-align: justify;
+    }
+    
+    p.first-paragraph {
+        color: var(--dark-grayish-blue);
+        text-transform: uppercase;
+        font-family: var(--font-montserrat);
+        letter-spacing: 0.4em;
+        font-size: var(--size-font);
+        margin: 0;
+    }
+    
+    h1 {
+        font-family: var(--font-fraunces);
+        color: var(--very-dark-blue);
+    }
+    
+    p.main-paragraph {
+        font-family: var(--font-montserrat);
+        color: var(--dark-grayish-blue);
+        word-break: break-all;
+        font-size: var(--size-font);
+        letter-spacing: 0.8px;
+        margin-bottom: 0;
+        line-height: 2em;
+    }
+    
+    div.texts2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+    }
+    
+    h2.value {
+        float: left;
+        color: var(--dark-cyan);
+        font-family: var(--font-fraunces);
+        font-weight: 700;
+        font-size: 2em;
+        margin-top: 1em;
+    }
+    
+    p.value {
+        float: right;
+        color: var(--dark-grayish-blue);
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+    }
+    
+    div.button-div {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+    
+    button {
+        background-color: var(--dark-cyan);
+        color: var(--white);
+        border: none;
+        padding: 1.3em 7em;
+        border-radius: 0.7em;
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        transition: 0.7s;
+    }
+    
+    button:hover {
+        background-color: var(--dark-green);
+        cursor: pointer;
+    }
 }
 
-div#left-div {
-    background-image: url(./images/image-product-desktop.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 65vh;
-    width: 40vh;
-    float: left;
-}
+/* -------------------- TABLET AND MOBILE --------------------- */
 
-div#right-div{
-    position: relative;
-    background-color: var(--white);
-    padding: 1.5em;
-    height: 58.9vh;
-    width: 35vh;
-    float: right;
-    text-align: justify;
-}
+@media screen and (min-width: 375px) and (max-width: 1439px) {
+    div#left-div,
+    div#right-div {
+        display: block;
+        margin-top: 20%;
+    }
 
-p.first-paragraph {
-    color: var(--dark-grayish-blue);
-    text-transform: uppercase;
-    font-family: var(--font-montserrat);
-    letter-spacing: 0.4em;
-    font-size: var(--size-font);
-    margin: 0;
-}
+    div#left-div {
+        background-image: url(./images/image-product-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 45vh;
+        width: 60vh;
+        /* border-radius: 1.5em; */
+        margin-top: 5%;
+    }
 
-h1 {
-    font-family: var(--font-fraunces);
-    color: var(--very-dark-blue);
-}
+    div#right-div{
+        background-color: var(--white);
+        padding: 1.5em;
+        height: 75vh;
+        width: 52vh;
+        text-align: justify;
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
 
-p.main-paragraph {
-    font-family: var(--font-montserrat);
-    color: var(--dark-grayish-blue);
-    word-break: break-all;
-    font-size: var(--size-font);
-    letter-spacing: 0.8px;
-    margin-bottom: 0;
-    line-height: 2em;
-}
+    p.first-paragraph {
+        color: var(--dark-grayish-blue);
+        text-transform: uppercase;
+        font-family: var(--font-montserrat);
+        letter-spacing: 0.4em;
+        font-size: var(--size-font);
+        margin: 0;
+    }
 
-div.texts2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0;
-}
+    h1 {
+        font-family: var(--font-fraunces);
+        color: var(--very-dark-blue);
+    }
 
-h2.value {
-    float: left;
-    color: var(--dark-cyan);
-    font-family: var(--font-fraunces);
-    font-weight: 700;
-    font-size: 2em;
-    margin-top: 1em;
-}
+    p.main-paragraph {
+        font-family: var(--font-montserrat);
+        color: var(--dark-grayish-blue);
+        word-break: break-all;
+        font-size: var(--size-font);
+        letter-spacing: 0.8px;
+        margin-bottom: 0;
+        line-height: 2em;
+    }
 
-p.value {
-    float: right;
-    color: var(--dark-grayish-blue);
-    margin-top: 2em;
-    margin-bottom: 1.5em;
-}
+    div.texts2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+    }
 
-div.button-div {
-    display: flex;
-    position: relative;
-    justify-content: center;
-}
+    h2.value {
+        color: var(--dark-cyan);
+        font-family: var(--font-fraunces);
+        font-weight: 700;
+        font-size: 2em;
+        margin-top: 1em;
+    }
 
-button {
-    background-color: var(--dark-cyan);
-    color: var(--white);
-    border: none;
-    padding: 1.3em 7em;
-    border-radius: 0.7em;
-    margin-top: 0;
-    margin-bottom: 1.5em;
-}
+    p.value {
+        color: var(--dark-grayish-blue);
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+    }
 
+    div.button-div {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+
+    button {
+        background-color: var(--dark-cyan);
+        color: var(--white);
+        border: none;
+        padding: 1.3em 7em;
+        border-radius: 0.7em;
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        transition: 0.7s;
+    }
+
+    button:hover {
+        background-color: var(--dark-green);
+        cursor: pointer;
+    }
+}
