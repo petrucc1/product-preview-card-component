@@ -1,3 +1,3 @@
 # Product preview card component
 
-The sole purpose of this project was to create a simple design with a product cart to train responsiveness (Flexbox) in CSS3. It is possible to visualize how the project turned out in folder "design", where there is the original prototype of the challenge carried out by Frontend Mentor (https://www.frontendmentor.io/challenges).
+O único objetivo deste projeto foi criar um design simples com um carrinho de produtos para treinar a capacidade de resposta (Flexbox) em CSS3. É possível visualizar como ficou o projeto na pasta "design", onde está o protótipo original do desafio realizado pelo Frontend Mentor (https://www.frontendmentor.io/challenges).
